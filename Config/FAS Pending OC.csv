@@ -1,0 +1,61 @@
+Discrepancy,Chronos,Area,Scenario,Comments,Required input,Status,Remarks,Notify Reason
+Active Service - [SSRV],Active Service - [SSRV],Res/Bus,,"Active service at Location TN=[INPUT], Is this additional service",TN,Pending,Active Service,
+ADDRESS/PREMISE - [SSRV],Address Premise (Multiple WC),Res/Bus,,Address is located in multiple wire centers of [INPUT] Please contact customer to get a FS or NDN #,List of Wire Center,Pending,Multiple WC,
+ADDRESS/PREMISE - [SSRV],Address Premise (Not Windstream Territory),Res/Bus,,Per Engineer Windstream does not service this address. Order has been cancelled. Please inform customer.,,Pending,Not Windstream Territory,
+DSL - [SSRV],DSL - FTB or DW Null,Res/Bus,,Order will be delayed. Order Rescheduled for [INPUT].,Date,Pending,FTB or DW Null,
+ORDER ENTRY - [SSRV],Order Entry - Caller ID MDF,Res/Bus,,"Caller ID not available, add NOCID to the DCRIS order if customer wants to keep the feature package.",,Pending,Need NOCID ASOC,
+DUE DATES - [SSRV],Due Date- Cut Flash,Res/Bus,,"Cut in progress, set due date to [INPUT]",Date,Pending,Cut Flash,
+Cable/TELEPHONE NUMBER – [CABLE],Cable/TELEPHONE NUMBER - CABLE,Res/Bus,,Need fictitious telephone number assigned,,Pending,Need Ficticious Number,
+ORDER ENTRY - [SSRV],Order Entry - Voice mail #,Res/Bus,,Assign DID Voicemail number and contact customer,,Pending,Need Voice Mail#,
+ADDRESS/PREMISE - [SSRV],Address Premise- Address Mismatch,Res/Bus,,"Verify Address, Order contains 2 different addresses",,Pending,Address Mismatch,
+No Pairs - [SSRV],No Pairs- No Bonded pair(Res),Res/Bus,,"No bonded pair available, already at highest speed on single facility. Please notify customer BB speed ordered not available due to facility capacity.",,Notify,No Bonded Pair, No Facilities 
+No Pairs - [SSRV],No Pairs- No Bonded pair(Bus),Res/Bus,,"No bonded pair available, already at highest speed on single facility. Please notify customer BB speed ordered not available due to facility capacity.",,Notify,No Bonded Pair, No Facilities 
+ORDER ENTRY - [SSRV],Order Entry - Duplicate,Res/Bus,,Duplicate order =[INPUT] that was worked first,Duplicate Order #,Pending,Duplicate Order,
+DUE DATES - [SSRV],Due Date - Notify cust,Res/Bus,,Order is in Notify-Cust. Facilities are now available. Please contact customer and establish new due date.,,Pending,Need New DD,
+DSL - [SSRV],DSL- Failed Qualification(Notify),Res/Bus,,Customer does not qualify for BB nor IPTV,,Notify,Failed Qualification,Order Correction
+ORDER ENTRY - [SSRV],Order Entry - FCO,Res/Bus,,Does customer want to pay FCO charge or change their phone #?,,Pending,Need FCO ASOC,
+DSL - [SSRV],DSL- Fiber - Awaiting Engineer,Res/Bus,,BB will be delayed due to Engineer Review,,Pending,Fiber Overlay - Enginerr Review,
+DSL - [SSRV],DSL- Fiber - Awaiting Engineer(DD),Res/Bus,,BB will be delayed.  Order rescheduled for [INPUT],Date,Pending,Fiber Overlay - Enginerr Review,
+DSL - [SSRV],DSL- Fiber - No Facility (DD),Res/Bus,,We estimate facilities will be available [INPUT].  Please inform cust.  Another OC will be sent to confirm due date of order once facilities are available.,Est Date,Pending,No Fiber Facilities,
+DSL - [SSRV],DSL- Fiber - No Facility (No DD),Res/Bus,,"No estimated date of when pins will be available, please advise cust, we will follow up in 2 weeks",,Pending,No Fiber Facilities,
+SMADRS - House # number in range - [E911],SMADRS - House # not in range - E911,Res/Bus,,SMADRS-House # not in range-E911 [INPUT],"Address
+",Pending,House# not in range,
+ORDER ENTRY - [SSRV],Order Entry - IPTV on GOTO,Business,,IPTV cannot be added on GOTO number without a work with order.  Please refer to order entry specifics.,,Pending,IPTV on GOTO number,
+ASOC - [SSRV],ASOC - Missing BB,Res/Bus,,Need BB ASOC,,Pending,Need BB ASOC,
+DSL - [SSRV],DSL - SSRV,Res/Bus,,Order will be delayed due to Engineer Review of BB.,,Notify,Engineer review, No Facilities 
+DSL - [SSRV],DSL - Engineer Review,Res/Bus,,Order will be delayed due to Engineer Review of BB.,,Notify,Engineer review, No Facilities 
+ORDER ENTRY - [SSRV],Order Entry - Suspend Non pay,Res/Bus,,BB is suspended for non-pay in M6,,Pending,MSS suspend non payment,
+DSL - [SSRV],DSL - No IPTV Pins(HSI),Res/Bus,,No IPTV pins available.  Cannot provide HSI Simple with IPTV at this time. Notify Customer,,Notify,No IPTV pins available,No Facilities
+No Pairs - [SSRV],No Pairs - No Bonded Pair(Notify cust),Res/Bus,,No bonded pairs available. Notify customer of delay.,,Notify,No Bonded pair for IPTV, No Facilities 
+No Pairs - [SSRV],No Pairs - Pair(Notify cust),Res/Bus,,"No bonded pair available, already at highest speed on single facility.  Cannot provide BB upgrade at this time. Please notify customer of delay.",,Notify,No Pair available, No Facilities 
+DSL - [SSRV],DSL - No Pins,Res/Bus,,No pins available.  Cannot provide BB upgrade or HSI SIMPLE BB install. Please notify customer.,,Notify,No Pins available, No Facilities 
+DUE DATES - [SSRV],DUE DATES - DD Mismatch,Res/Bus,,Due dates on O & I order are different. Please verify correct due date with customer. Active customer still at location.,,Pending,O & I order differet due date,
+LSPAC/DUE DATES - [LSPAC],LSPAC/DUE DATES - DD Mismatch,WinBack,,Due dates on O & I Order are different. Please verify correct due date with customer.,,Pending,O & I order differet due date,
+BOID/BEX Incorrect - [SSRV],BOID/BEX - SSRV,Res/Bus,,"Order is not in correct boid/bex, correct BOID= [INPUT1] BEX=[INPUT2]",Correct Boid Bex,Pending,Wrong Boid/Bex,
+DUE DATES - [SSRV],Due Date - Pin not available,Res/Bus,,"Pins are unavailable, leave order in ready ASGN and change due date to [INPUT] and notify customer.",Est Date,Pending,Pins available in MSS but not in MIROR,
+DUE DATES - [SSRV],Due Date - Pin Blocked,Res/Bus,,"PINs/Equipment not ready, notify customer, and enter order on BB Form for the BB Held Order Team.",,Notify,PINs blocked, No Facilities 
+LSPAC/DUE DATES - [LSPAC],LSPAC/DUE DATES - DD Mismatch(Remaining),Remaining Svc,,Due dates on O & I Order are different. Please verify correct due date with customer.,,Pending,O & i order different due date,
+LSPAC/ADDRESS/PREMISE - [LSPAC],LSPAC/ADDRESS PREMISE - Active,UNEP-Resale-PortOut,,"Active service at Location TN=[INPUT], Is this additional service",TN,Pending,Active Service,
+ORDER ENTRY - [SSRV],Order Entry - Static IP,Res/Bus,,Customer cannot have IPTV with Static IP,,Pending,Cannot have IPTV with Static IP,
+SMADRS - Street not in miror - [E911],SMADRS - street not in MIROR - E911,Res/Bus,,"Street does not exist in MIROR, Verify and update MIROR [INPUT]",Address,Pending,Street not in MIROR,
+ORDER ENTRY - [SSRV],Order Entry - Metro,Res/Bus,,Does customer want Metro Calling Plan or change their phone #?,,Pending,Metro calling plan,
+LSPAC/TELEPHONE NUMBER - [LSPAC],LSPAC/TELEPHONE NUMBER - (LSPAC),WinBack,,PLEASE PROVIDE CORRECT TELEPHONE NUMBER,,Pending,Provide Correct TN,
+SD/ADDRESS/PREMISE - [SD],SD/ADDRESS - Address is in multiple Wire Centers,Bus/SvcDelSMB,Address is in multiple Wire Centers and no FS or NDN # is noted on order ,Address is located in multiple wire centers of [INPUT] Please contact customer to get a FS or NDN #,List of Wire Center,Pending,Multiple WC,
+SD/BOID-BEX - [SD],SD - Order is in the wrong BOID/BEX,Bus/SvcDelSMB,Order is in the wrong BOID/BEX,"Order is not in correct boid/bex, correct BOID=[INPUT1] BEX=[INPUT2]",Correct Boid Bex,Pending,Wrong Boid/Bex,
+SD/DUE DATES - [SD],SD - Different Due Dates- O & I,Bus/SvcDelSMB,O & I orders at same address where O-order due date is > than I order due date ,Due dates on O & I order are different. Please verify correct due date with customer. Active customer still at location. ,,Pending,,
+SD/OLD DEBT - [SD],SD - BAD DEBT or OLD DEBT in MIROR,Bus/SvcDelSMB,"""BAD DEBT"" or ""OLD DEBT"" in MIROR note field on Former Service record ",BAD DEBT or OLD DEBT in note field of former service in MIROR.  Please confirm if service can be installed.,,Pending,,
+SD/ORDER ENTRY - [SD],SD - BB cannot be installed/upgraded,Bus/SvcDelSMB,Broadband Install/Upgrade on TN in hunt group and voice requires change to VoIP,BB cannot be installed or upgraded on this TN in hunt group.  BB speed required VoIP service.,,Pending,,
+SD/ORDER ENTRY - [SD],SD - Missing information,Bus/SvcDelSMB,"Cannot complete the order due to missing information or ""work with""  orders not correct",Missing [INPUT],Missing Information,Pending,,
+SD/ORDER ENTRY - [SD],SD - Duplicate order MIROR already worked,Bus/SvcDelSMB,SD - Duplicate order MIROR already worked,Duplicate order =[INPUT] that was worked first,Duplicate Order #,Pending,,
+SD/ORDER ENTRY - [SD],SD - FCO - missing appropriate ASOC ,Bus/SvcDelSMB,FCO - missing appropriate ASOC ,Does customer want to pay FCO charge or change their phone #?,,Pending,,
+SD/ORDER ENTRY - [SD],SD - MSS - Suspend for non pay,Bus/SvcDelSMB,MSS - Suspend for non pay,BB is suspended for non-pay in M6 ,,Pending,,
+SD/ORDER ENTRY - [SD],SD - Invalid TN(Minnesota Only),Bus/SvcDelSMB,Telephone number assigned invalid for exchange (Minnesota only),Does customer want Metro Calling Plan or change their phone #?,,Pending,,
+SD/PIC-IPIC - [SD],SD - No PIC/IPIC ,Bus/SvcDelSMB,"No PIC/IPIC on ""I""order",Add PIC and IPIC,,Pending,,
+ASOC - [SSRV],ASOC - Incorrect or Missing grade,Res/Bus,Incorrect or missing access line grade ASOC,Incorrect or missing access line grade ASOC,,Pending, Incorrect or Missing grade,
+PIC/IPIC - [SSRV],SSRV-NO PIC/IPIC,Res/Bus,"No PIC/IPIC on ""I""order",Add PIC and IPIC,,Pending,,
+SD/DSL - [SD],SD-Failed Qualification(Notify),Res/Bus,Failed Qualification,Customer does not qualify for BB nor IPTV,,Notify,Failed Qualification,Order Correction
+ORDER ENTRY - [SSRV],SSRV- FCO - missing appropriate ASOC ,Res/Bus,FCO - missing appropriate ASOC ,Does customer want to pay FCO charge or change their phone #?,,Pending,,
+ASOC - [SSRV],ASOC-Order requires regular (non-VoIP) Access Line ASOC due to change of serving facilities,Res/Bus,Order requires regular (non-VoIP) Access Line ASOC due to change of serving facilities,Regular (no-VoIP) Voice Access Line ASOC required for voice service due to BB serving facility.,,Pending,,
+ORDER ENTRY - [SSRV],Order Entry-VoIP: Y Voice Requires VoIP Access Line,Res/Bus,VoIP: Y Voice Requires VoIP Access Line,Consumer VoIP Access Line ASOC required for voice service.,,Pending,,
+ORDER ENTRY - [SSRV],Order Entry-VoIP: M Remove VoIP Access Line Asocs and add enhanced features (M),Res/Bus,VoIP: M Remove VoIP Access Line Asocs and add enhanced features (M),Remove Consumer VoIP Access Line ASOCs and add enhanced features.,,Pending,,
+ORDER ENTRY - [SSRV],Order Entry-VoIP: M Remove VoIP Access Line and enhanced features due to DSLAM ,Res/Bus,VoIP: M Remove VoIP Access Line and enhanced features due to DSLAM assigned is VoIP: N or Y,Remove Consumer VoIP Access Line ASOCs and enhanced features. Determine if another feature package should be added,,Pending,,
